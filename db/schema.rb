@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20130604031547) do
     t.datetime "updated_at"
   end
 
-  add_index "phones", ["contact_id"], name: "index_phones_on_contact_id"
+  add_index "phones", ["contact_id"], name: "index_phones_on_contact_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email"
